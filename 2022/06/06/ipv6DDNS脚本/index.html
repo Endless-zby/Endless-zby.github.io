@@ -17,10 +17,10 @@
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?543e5c55e1911bc531eeaae51aacee1b";
-  var s = document.getElementsByTagName("script")[0];
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script><script>const GLOBAL_CONFIG = {
+</script><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -109,7 +109,7 @@
         return item.value
       }
     }
-
+  
     win.getScript = url => new Promise((resolve, reject) => {
       const script = document.createElement('script')
       script.src = url
@@ -123,7 +123,7 @@
       }
       document.head.appendChild(script)
     })
-
+  
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
@@ -137,10 +137,10 @@
         }
       }
       const t = saveToLocal.get('theme')
-
+    
           if (t === 'dark') activateDarkMode()
           else if (t === 'light') activateLightMode()
-
+        
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
         if (asideStatus === 'hide') {
@@ -153,13 +153,13 @@
 <p>目前中国移动宽带是支持ipv6的，如果是安装的是移动宽带，就可以给自己的所有设备分配到ipv6公网地址，不用再搞什么内网穿透，公网速度直接取决于带宽上行速度，简直完美，但是目前大多ipv6地址是动态的，所以得想办法把动态的ipv6地址解析到一个固定的域名上</p>
 </blockquote>
 <h3 id="ipv6检查"><a href="#ipv6检查" class="headerlink" title="ipv6检查"></a>ipv6检查</h3><p>可以去test-ipv6网站查一下</p>
-<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://test-ipv6.com/"
+<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://test-ipv6.com/" 
   title="IPv6 连接测试"><i class="far fa-hand-point-right"></i><span>IPv6 连接测试</span></a>
 <p>如果是这样的结果就说明你的宽带以及运营商是支持ipv6并分配给你了可使用的ipv6地址，就可以看下面的操作了<br><img src="https://byzhao-blog-1257201044.cos.ap-beijing.myqcloud.com/blog/202266-8py59ww3vpdns4.png"></p>
 <h3 id="注册域名"><a href="#注册域名" class="headerlink" title="注册域名"></a>注册域名</h3><blockquote>
 <p>域名注册比较简单，但是可能需要一段时间进行实名认证的审核，现在好像可以在手机上一键认证，速度会比较快</p>
 </blockquote>
-<a class="btn-beautify button--animated orange larger" target="_blank" rel="noopener" href="https://buy.cloud.tencent.com/domain?domain=&tlds=&from=dnspodEntrance"
+<a class="btn-beautify button--animated orange larger" target="_blank" rel="noopener" href="https://buy.cloud.tencent.com/domain?domain=&tlds=&from=dnspodEntrance" 
   title="腾讯云域名注册申请"><i class="far fa-hand-point-right"></i><span>腾讯云域名注册申请</span></a>
 <p>如果是打算长期作为自己工作站或者NAS使用的话没必要购买<code>.cn</code> <code>.com</code>这类域名，第一次买可能会便宜点，后面每年的费用都会有一定幅度的增长，这种情况下建议购买<code>.xyz</code>  <code>.work</code>  <code>.club</code>这种相对冷门的域名，如果有钱或者想要打造自己的一个招牌的话忽略这个建议。</p>
 <h3 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h3><p>添加一条A记录 记录值随便填一个规范的ip地址<br><img src="https://byzhao-blog-1257201044.cos.ap-beijing.myqcloud.com/blog/202266-tsewb2mbtsdns1.png"></p>
@@ -213,11 +213,11 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:send', function () {
 
-  // removeEventListener toc scroll
+  // removeEventListener toc scroll 
   window.removeEventListener('scroll', window.tocScrollFn)
 
   typeof preloader === 'object' && preloader.initLoading()
-
+  
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       if (!window.aplayers[i].options.fixed) {

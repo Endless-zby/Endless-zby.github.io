@@ -15,10 +15,10 @@
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?543e5c55e1911bc531eeaae51aacee1b";
-  var s = document.getElementsByTagName("script")[0];
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script><script>const GLOBAL_CONFIG = {
+</script><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -107,7 +107,7 @@
         return item.value
       }
     }
-
+  
     win.getScript = url => new Promise((resolve, reject) => {
       const script = document.createElement('script')
       script.src = url
@@ -121,7 +121,7 @@
       }
       document.head.appendChild(script)
     })
-
+  
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
@@ -135,10 +135,10 @@
         }
       }
       const t = saveToLocal.get('theme')
-
+    
           if (t === 'dark') activateDarkMode()
           else if (t === 'light') activateLightMode()
-
+        
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
         if (asideStatus === 'hide') {
@@ -151,10 +151,10 @@
 <p>分布式任务调度平台</p>
 <p>XXL-JOB是一个轻量级分布式任务调度平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。</p>
 </blockquote>
-<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://www.xuxueli.com/xxl-job/#1.5%20%E4%B8%8B%E8%BD%BD"
+<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://www.xuxueli.com/xxl-job/#1.5%20%E4%B8%8B%E8%BD%BD" 
   title="查看文档"><i class="far fa-hand-point-right"></i><span>查看文档</span></a>
 
-<a class="btn-beautify button--animated orange larger" target="_blank" rel="noopener" href="https://github.com/xuxueli/xxl-job"
+<a class="btn-beautify button--animated orange larger" target="_blank" rel="noopener" href="https://github.com/xuxueli/xxl-job" 
   title="GitHub 下载地址"><i class="far fa-hand-point-right"></i><span>GitHub 下载地址</span></a>
 
 <hr>
@@ -204,11 +204,11 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:send', function () {
 
-  // removeEventListener toc scroll
+  // removeEventListener toc scroll 
   window.removeEventListener('scroll', window.tocScrollFn)
 
   typeof preloader === 'object' && preloader.initLoading()
-
+  
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       if (!window.aplayers[i].options.fixed) {

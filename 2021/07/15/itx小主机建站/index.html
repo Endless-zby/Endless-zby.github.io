@@ -15,10 +15,10 @@
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?543e5c55e1911bc531eeaae51aacee1b";
-  var s = document.getElementsByTagName("script")[0];
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script><script>const GLOBAL_CONFIG = {
+</script><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -107,7 +107,7 @@
         return item.value
       }
     }
-
+  
     win.getScript = url => new Promise((resolve, reject) => {
       const script = document.createElement('script')
       script.src = url
@@ -121,7 +121,7 @@
       }
       document.head.appendChild(script)
     })
-
+  
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
@@ -135,10 +135,10 @@
         }
       }
       const t = saveToLocal.get('theme')
-
+    
           if (t === 'dark') activateDarkMode()
           else if (t === 'light') activateLightMode()
-
+        
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
         if (asideStatus === 'hide') {
@@ -154,7 +154,7 @@
 <h1 id="控制台"><a href="#控制台" class="headerlink" title="控制台"></a>控制台</h1><blockquote>
 <p>安装宝塔控制面板（省时省心）<br><a target="_blank" rel="noopener" href="https://www.bt.cn/">https://www.bt.cn/</a></p>
 </blockquote>
-<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://www.bt.cn/"
+<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://www.bt.cn/" 
   title="宝塔控制面板官网"><i class="far fa-hand-point-right"></i><span>宝塔控制面板官网</span></a>
 
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sSO http://download.bt.cn/install/install_panel.sh &amp;&amp; bash install_panel.sh</span><br></pre></td></tr></table></figure>
@@ -167,7 +167,7 @@
 <h2 id="更新wget"><a href="#更新wget" class="headerlink" title="更新wget"></a>更新wget</h2><blockquote>
 <p>所有版本：<a target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/gnu/wget/">http://mirrors.ustc.edu.cn/gnu/wget/</a></p>
 </blockquote>
-<a class="btn-beautify button--animated orange larger" target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/gnu/wget/"
+<a class="btn-beautify button--animated orange larger" target="_blank" rel="noopener" href="http://mirrors.ustc.edu.cn/gnu/wget/" 
   title="查看所有版本"><i class="far fa-hand-point-right"></i><span>查看所有版本</span></a>
 
 <ul>
@@ -230,11 +230,11 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:send', function () {
 
-  // removeEventListener toc scroll
+  // removeEventListener toc scroll 
   window.removeEventListener('scroll', window.tocScrollFn)
 
   typeof preloader === 'object' && preloader.initLoading()
-
+  
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       if (!window.aplayers[i].options.fixed) {

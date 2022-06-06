@@ -16,10 +16,10 @@
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?543e5c55e1911bc531eeaae51aacee1b";
-  var s = document.getElementsByTagName("script")[0];
+  var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script><script>const GLOBAL_CONFIG = {
+</script><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
@@ -108,7 +108,7 @@
         return item.value
       }
     }
-
+  
     win.getScript = url => new Promise((resolve, reject) => {
       const script = document.createElement('script')
       script.src = url
@@ -122,7 +122,7 @@
       }
       document.head.appendChild(script)
     })
-
+  
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
@@ -136,10 +136,10 @@
         }
       }
       const t = saveToLocal.get('theme')
-
+    
           if (t === 'dark') activateDarkMode()
           else if (t === 'light') activateLightMode()
-
+        
       const asideStatus = saveToLocal.get('aside-status')
       if (asideStatus !== undefined) {
         if (asideStatus === 'hide') {
@@ -151,12 +151,12 @@
     })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://i.loli.net/2021/05/16/3UBW4vXZdOP5IN7.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">55</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/image/"><i class="fa-fw fas fa-camera"></i><span> 图片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 相关</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://s2.loli.net/2022/02/14/RXQjUlSwY6DyrvM.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">雅</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/image/"><i class="fa-fw fas fa-camera"></i><span> 图片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 相关</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">OpenWRT中ShadowSocksR配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-02-15T13:34:28.000Z" title="发表于 2022-02-15 21:34:28">2022-02-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-02-15T13:34:28.000Z" title="更新于 2022-02-15 21:34:28">2022-02-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="OpenWRT中ShadowSocksR配置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><blockquote>
 <p>OpenWRT中ShadowSocksR Plus+ 支持了SS/SSR/V2RAY/TROJAN/NAIVEPROXY/SOCKS5/TUN 等通信手段，可以说拥有所有主流的代理协议,定时更新节点，节点自动切换，流量分组等功能</p>
 </blockquote>
-<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://github.com/Endless-zby/free"
+<a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://github.com/Endless-zby/free" 
   title="节点更新订阅github"><i class="far fa-hand-point-right"></i><span>节点更新订阅github</span></a>
 <h3 id="节点订阅URL"><a href="#节点订阅URL" class="headerlink" title="节点订阅URL"></a>节点订阅URL</h3><figure class="highlight http"><figcaption><span>request</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://raw.fastgit.org/freefq/free/master/v2</span><br></pre></td></tr></table></figure>
 
 <h3 id="ShadowSocksR配置"><a href="#ShadowSocksR配置" class="headerlink" title="ShadowSocksR配置"></a>ShadowSocksR配置</h3><p><img src="https://s2.loli.net/2022/02/15/ubzEQx4Cg9NT7BF.png"><br><img src="https://s2.loli.net/2022/02/15/wafPnBXktUgDFLu.png"><br><img src="https://s2.loli.net/2022/02/15/X3NfIvzOtV67cb2.png"></p>
-<p>配置以下禁止连接的域名，可以阻止小米设备的广告和上传用户隐私 <a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://www.zhihu.com/question/392135636"
+<p>配置以下禁止连接的域名，可以阻止小米设备的广告和上传用户隐私 <a class="btn-beautify button--animated green larger" target="_blank" rel="noopener" href="https://www.zhihu.com/question/392135636" 
   title="如何看待小米疑似收集手机浏览器浏览记录?"><i class="far fa-hand-point-right"></i><span>如何看待小米疑似收集手机浏览器浏览记录?</span></a></p>
 <figure class="highlight http"><figcaption><span>request</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">gvod.aiseejapp.atianqi.com</span><br><span class="line">stat.pandora.xiaomi.com</span><br><span class="line">upgrade.mishop.pandora.xiaomi.com</span><br><span class="line">logonext.tv.kuyun.com</span><br><span class="line">config.kuyun.com</span><br><span class="line">mishop.pandora.xiaomi.com</span><br><span class="line">dvb.pandora.xiaomi.com</span><br><span class="line">api.ad.xiaomi.com</span><br><span class="line">de.pandora.xiaomi.com</span><br><span class="line">data.mistat.xiaomi.com</span><br><span class="line">jellyfish.pandora.xiaomi.com</span><br><span class="line">gallery.pandora.xiaomi.com</span><br><span class="line">o2o.api.xiaomi.com</span><br><span class="line">bss.pandora.xiaomi.com</span><br></pre></td></tr></table></figure>
 <p>或者使用<code>广告屏蔽大师</code></p>
@@ -205,11 +205,11 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:send', function () {
 
-  // removeEventListener toc scroll
+  // removeEventListener toc scroll 
   window.removeEventListener('scroll', window.tocScrollFn)
 
   typeof preloader === 'object' && preloader.initLoading()
-
+  
   if (window.aplayers) {
     for (let i = 0; i < window.aplayers.length; i++) {
       if (!window.aplayers[i].options.fixed) {
